@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ryan McDonald",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
 }
