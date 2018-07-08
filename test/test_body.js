@@ -17,14 +17,6 @@ describe("Body", () => {
 			assert.equal(body.position.x, 0, "should have position = 0");
 			assert.equal(body.position.y, 0, "should have position = 0");
 			assert.equal(body.position.z, 0, "should have position = 0");
-
-			assert.equal(body.velocity.x, 0, "should have zero = 0");
-			assert.equal(body.velocity.y, 0, "should have zero = 0");
-			assert.equal(body.velocity.z, 0, "should have zero = 0");
-
-			assert.equal(body.spin.x, 0, "should have spin = 100");
-			assert.equal(body.spin.y, 0, "should have spin = 100");
-			assert.equal(body.spin.z, 0, "should have spin = 100");
 		}
 	});
 });

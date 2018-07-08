@@ -1,21 +1,21 @@
 
 const assert = require('assert');
-const vec3   = require('../lib/vec3.js');
+const lib    = require('../lib');
 
-describe("Vec3", () => {
+describe("vec3h", () => {
 
-	it("should have a custom toString()", () => {
-		let v = vec3.new();
+	it("should create a custom toString()", () => {
+		let v = lib.vec3h.new();
 		assert.equal(v.toString(), "{0,0,0}", "should just print values in braces");
 	});
 
-	it("should return random values in expected bounds for vec3.random()", () => {
+	it("should return random values in expected bounds for vec3h.random()", () => {
 		let max       = 5;
 		let count     = 5000;
 		let foundMax  = false;
 		let foundZero = false;
 		for (let i=0; i<count; i++) {
-			let v = vec3.random(0, max);
+			let v = lib.vec3h.random(0, max);
 			assert(v.x<=max, "should be less than or equal to provided max: "+ max);
 			assert(v.x>=0,   "should be equal to or greater than zero");
 			assert(v.y<=max, "should be less than or equal to provided max: "+ max);
